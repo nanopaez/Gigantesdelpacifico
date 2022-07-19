@@ -80,7 +80,7 @@ const Login = () => {
           localStorage.setItem("user", infoUser);
           /*const roles = [infoData['level']];
           setAuth({user, password, roles})*/
-          navigate("/productos");
+          navigate("/products");
         } catch (error) {
           console.log(error);
         }
@@ -90,11 +90,11 @@ const Login = () => {
     return(<div className="hold-transition login-page">
     <div className="login-box">
       <div className="login-logo">
-        <a href='/'><b>Gigantes del </b>Pacifico</a>
+        <a href='/'><b>Gigante</b>del Pacifico</a>
       </div>
       <div className="card">
         <div className="card-body login-card-body">
-          <p className="login-box-msg">Ingrese Nombre de Usuario y Contraseña para acceder</p>
+          <p className="login-box-msg">Ingrese sus credenciales para acceder</p>
     
           <form onSubmit={logger}>
             <div className="input-group mb-3">
